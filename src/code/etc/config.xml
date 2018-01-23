@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Loewenstark_Bcrypt>
+            <version>0.0.0.1</version>
+        </Loewenstark_Bcrypt>
+    </modules>
+    <global>
+        <helpers>
+            <ldsbcrypt>
+                <class>Loewenstark_Bcrypt_Helper</class>
+            </ldsbcrypt>
+        </helpers>
+        <models>
+            <ldsbcrypt>
+                <class>Loewenstark_Bcrypt_Model</class>
+            </ldsbcrypt>
+            <customer>
+                <rewrite>
+                    <customer>Loewenstark_Bcrypt_Model_Customer_Customer</customer>
+                </rewrite>
+            </customer>
+            <admin>
+                <rewrite>
+                    <user>Loewenstark_Bcrypt_Model_Admin_Model_User</user>
+                </rewrite>
+            </admin>
+        </models>
+    </global>
+</config>
