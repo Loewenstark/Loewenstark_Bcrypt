@@ -1,6 +1,6 @@
 <?php
 
-class Loewenstark_Bcrypt_Model_Admin_Model_User
+class Loewenstark_Bcrypt_Model_Admin_User
 extends Mage_Admin_Model_User
 {
     /**

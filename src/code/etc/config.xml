@@ -22,7 +22,7 @@
             </customer>
             <admin>
                 <rewrite>
-                    <user>Loewenstark_Bcrypt_Model_Admin_Model_User</user>
+                    <user>Loewenstark_Bcrypt_Model_Admin_User</user>
                 </rewrite>
             </admin>
         </models>
