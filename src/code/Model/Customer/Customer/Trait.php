@@ -14,4 +14,16 @@ trait Loewenstark_Bcrypt_Model_Customer_Customer_Trait
         return $this->_getHelper('ldsbcrypt')
             ->getHash(trim($password), !is_null($salt) ? $salt : Mage_Admin_Model_User::HASH_SALT_LENGTH);
     }
+
+    /**
+     * 
+     * @param string $value
+     * @return $this
+     */
+    public function setPasswordConfirmation($value)
+    {
+        $this->setData('confirmation', $value);
+        $this->setData('password_confirmation', $value);
+        return $this;
+    }
 }

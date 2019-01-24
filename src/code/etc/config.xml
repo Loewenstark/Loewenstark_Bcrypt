@@ -27,4 +27,15 @@
             </admin>
         </models>
     </global>
+    <frontend>
+        <routers>
+            <customer>
+                <args>
+                    <modules>
+                        <ldsbcrypt before="Mage_Customer">Loewenstark_Bcrypt_Customer</ldsbcrypt>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+    </frontend>
 </config>
