@@ -56,6 +56,7 @@ extends Mage_Core_Controller_Front_Action
                          */
                         $customer->setPassword($newPass);
                         $customer->setPasswordConfirmation($confPass);
+                        $customer->setConfirmation($confPass); // for older Magento Versions
                     } else {
                         $errors[] = $this->__('New password field cannot be empty.');
                     }
